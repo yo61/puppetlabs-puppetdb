@@ -101,10 +101,10 @@ class puppetdb::server(
 
   if $manage_firewall {
     class { 'puppetdb::server::firewall':
-      http_port      => $listen_port,
-      open_http_port => $open_listen_port,
-      ssl_port       => $ssl_listen_port,
-      open_ssl_port  => $open_ssl_listen_port,
+      http_port              => $listen_port,
+      open_http_port         => $open_listen_port,
+      ssl_port               => $ssl_listen_port,
+      open_ssl_port          => $open_ssl_listen_port,
     }
   }
 
